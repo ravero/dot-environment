@@ -1,12 +1,12 @@
 -- Options
-vim.opt.number = true
-vim.opt.relativenumber = true
-vim.opt.autoindent = true
-vim.opt.smarttab = true
-vim.opt.tabstop = 4
-vim.opt.shiftwidth = 4
-vim.opt.softtabstop = 4
-vim.opt.mouse = 'a'
+--vim.opt.number = true
+--vim.opt.relativenumber = true
+--vim.opt.autoindent = true
+--vim.opt.smarttab = true
+--vim.opt.tabstop = 4
+--vim.opt.shiftwidth = 4
+--vim.opt.softtabstop = 4
+--vim.opt.mouse = 'a'
 
 -- General Keybindings
 local keymap = vim.api.nvim_set_keymap
@@ -21,7 +21,6 @@ keymap('n', '<leader>a', ':<C-u>call append(line("."),   repeat([""], v:count1))
 keymap('n', '<leader>o', ':<C-u>call append(line(".")-1, repeat([""], v:count1))<CR>', silent_opts)
 
 -- Append Configurations
-require('ravero.lspconfig')
-require('ravero.nerdtree')
+--require('ravero.lspconfig')
 require('ravero.telescope')
 
